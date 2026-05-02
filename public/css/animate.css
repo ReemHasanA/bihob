@@ -1,0 +1,10 @@
+@keyframes sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.animate-sway {
+  /* Adjust the '3s' to make it faster or slower */
+  animation: sway 4s ease-in-out infinite;
+  transform-origin: bottom; /* Crucial: ensures they sway from the base */
+}

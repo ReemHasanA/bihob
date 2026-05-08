@@ -20,9 +20,9 @@
                 <x-app-logo-icon class="size-16 inline-block"/>
             </div>
             <div class="space-x-6 text-secondary font-medium">
-                <a href="#" class="hover:text-primary transition">الرئيسية</a>
-                <a href="#" class="hover:text-primary transition">المتجر</a>
-                <a href="#" class="hover:text-primary transition">قصتنا</a>
+                <a href="{{ url('/') }}" class="hover:text-primary transition">الرئيسية</a>
+                <a href="{{ url('/shop') }}" class="hover:text-primary transition">المتجر</a>
+                <a href="{{ url('/story') }}" class="hover:text-primary transition">قصتنا</a>
             </div>
         </div>
     </nav>

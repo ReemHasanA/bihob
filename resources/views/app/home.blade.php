@@ -46,9 +46,9 @@
             <!-- نص القصة -->
             <div class="order-2 md:order-1 text-right">
                 <h2 class="text-secondary text-sm font-bold tracking-widest uppercase mb-4 border-r-4 border-primary pr-4">من نحن</h2>
-                <h1 class="text-4xl md:text-5xl font-extrabold text-secondary mb-8 leading-tight">
+                <h1 class="text-4xl md:text-5xl/20 font-extrabold text-secondary my-8 leading-tight">
                     فنٌّ يشبهنا، <br>
-                    <span class="text-primary italic">وُلد من رحم هويتنا.</span>
+                    <span class="text-primary">وُلد من رحم هويتنا.</span>
                 </h1>
                 
                 <div class="space-y-6 text-gray text-lg leading-relaxed">
@@ -60,7 +60,6 @@
                     </p>
                 </div>
 
-                <!-- توقيع الفنان أو زر تفاعلي -->
                 <div class="mt-10">
                     <div class="inline-block border-b-2 border-beige pb-2 text-primary font-serif italic text-xl">
                         بكل حب، فريق بحب
@@ -68,10 +67,8 @@
                 </div>
             </div>
 
-            <!-- الصورة الفنية -->
+
             <div class="order-1 md:order-2 relative">
-                <!-- خلفية زخرفية خلف الصورة -->
-                {{-- <div class="absolute -top-10 -right-10 w-64 h-64 bg-beige/20 rounded-full blur-3xl -z-10"></div> --}}
                 
                 <div class="relative group">
                     <img src="{{ asset('images/about.png') }}" alt="رسومات تعبر عن هويتنا" 

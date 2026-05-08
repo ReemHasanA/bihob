@@ -51,7 +51,7 @@ jobs:
         run: php artisan key:generate
 
       - name: Create Test Database
-        run: php artisan migrate --env=testing
+        run: php artisan migrate
 
       - name: Build Assets
         run: npm run build

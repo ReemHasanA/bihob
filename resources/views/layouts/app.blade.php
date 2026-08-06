@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url('css/animate.css') }}">
     <title>صنع بحب | Handmade Art</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

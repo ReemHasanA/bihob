@@ -3,19 +3,19 @@
 @section('content')
     <!-- Hero Section -->
     <section class="m-md-5">
-        <div class="flex justify-around p-5 gap-4 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-around p-5 gap-4 max-w-7xl mx-auto">
             <div class="mix-blend-multibly max-w-sm">
-                <img src="{{ asset('images/girl-with-hijab-and-her-flower-pot.png') }}" alt="">
+                <img src="{{ asset('images/girl-with-hijab-and-her-flower-pot.png') }}" alt="{{ __('Hijabi cartoon girl with flower bot') }}">
             </div>
             
-            <div class="max-w-md self-center">
+            <div class="max-w-md self-center my-6">
                 <h1 class="text-5xl font-extrabold text-secondary mb-6 leading-tight">
                     هذا الفن صنع <x-app-logo-icon class="size-20 inline-block"/>
                 </h1>
                 <p class="text-lg text-gray mb-10 max-w-xl mx-auto">
                     اكتشف لمستنا الفنية الفريدة، رُسمت وأُبدعت بكل إتقانٍ وحب لتضيف لمسة جمالية لمقنياتك.
                 </p>
-                <a href="#shop" class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-secondary transition-all shadow-lg">
+                <a href="#shop" class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-secondary/50 transition-all shadow-lg">
                     تسوق الآن
                 </a>
                 

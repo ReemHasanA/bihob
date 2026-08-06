@@ -3,8 +3,103 @@
   50% { transform: rotate(3deg); }
 }
 
+/* Sun animations */
+@keyframes sunRise {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes sunShine {
+  0%, 100% {
+    filter: drop-shadow(0 0 0px rgba(255, 193, 7, 0.5));
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(255, 193, 7, 0.8));
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+/* Cloud: continuous gentle drift, starts once in view */
+@keyframes cloudFloat {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(8px) translateY(-6px); }
+}
+
+/* Winter girl: soft bounce-in, then settles (not an infinite bounce) */
+@keyframes gentleBounceIn {
+  0%   { transform: translateY(30px); opacity: 0; }
+  60%  { transform: translateY(-8px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in,
+.sun-animate ,
+.cloud-animate {
+  opacity: 0;
+}
+
+/* Apply animations when in view */
+.winter-animate.in-view {
+  animation: gentleBounceIn 0.9s ease-out 0.4s forwards;
+}
+
+.cloud-animate.in-view {
+  animation: fadeIn 0.8s ease-out forwards,
+              cloudFloat 5s ease-in-out 0.8s infinite;
+}
+
+.sun-animate.in-view {
+  animation: sunRise 0.8s ease-out forwards,
+              sunShine 2s ease-in-out 0.8s infinite;
+              
+}
+
+.animate-fade-in.in-view {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.girl-animate.in-view {
+  animation: fadeIn 0.8s ease-out 1s forwards,
+              sway 4s ease-in-out 2s infinite;
+}
+
 .animate-sway {
-  /* Adjust the '3s' to make it faster or slower */
+  /* Adjust the '?s' to make it faster or slower */
   animation: sway 4s ease-in-out infinite;
   transform-origin: bottom; /* Crucial: ensures they sway from the base */
+}
+
+.animate-float {
+  animation: float 4s ease-in-out 1.4s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sun-animate.in-view,
+  .girl-animate.in-view,
+  .animate-float,
+  .animate-sway {
+    animation: none !important;
+  }
 }

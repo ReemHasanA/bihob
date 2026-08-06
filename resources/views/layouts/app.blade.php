@@ -14,10 +14,21 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-white font-sans antialiased text-gray">
-    <nav class="max-w-7xl mx-auto sticky md:rounded-full shadow-lg top-2 z-50 bg-white/50 backdrop-blur-md border-b border-beige/30">
+    <div 
+        x-data="{ loading: true }"
+        x-init="setTimeout(() => loading = false, 300)"
+        x-show="loading"
+        x-transition:leave="transition ease-out duration-600"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="bg-white h-screen w-full flex justify-center items-center z-100 fixed"
+    >
+        <flux:icon.heart variant="solid" class="size-20 text-primary animate-ping" />
+    </div>
+    <nav class="max-w-7xl md:mx-6 lg:mx-auto sticky md:rounded-full shadow-lg top-2 z-50 bg-white/50 backdrop-blur-md border-b border-beige/30">
         <div class="px-8 py-4 flex justify-between items-center ">
             <div class="text-2xl font-bold text-primary italic">
-                <x-app-logo-icon class="size-16 inline-block"/>
+                <a href="{{ url('/') }}"><x-app-logo-icon class="size-16 inline-block"/></a>
             </div>
             <div class="space-x-6 text-secondary font-medium">
                 <a href="{{ url('/') }}" class="hover:text-primary transition">الرئيسية</a>

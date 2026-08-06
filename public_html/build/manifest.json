@@ -1,0 +1,27 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-CFSJY-ht.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/fonts/Amiri/Amiri-Regular.ttf": {
+    "file": "assets/Amiri-Regular-DYKNhp1L.ttf",
+    "src": "resources/fonts/Amiri/Amiri-Regular.ttf"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-EtmsARUW.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-CFSJY-ht.css"
+    ],
+    "assets": [
+      "assets/Amiri-Regular-DYKNhp1L.ttf"
+    ]
+  }
+}

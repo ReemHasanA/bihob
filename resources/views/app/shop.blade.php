@@ -17,11 +17,11 @@
                 </p>
             </div>
 
-            <img
-                src="{{ asset('images/sun.png') }}"
-                alt="smily sun"
-                class="sun-animate size-24"
-                :class="{ 'in-view': isInView }"
+            <img 
+                src="{{ asset('images/peace-for-your-heart1.png') }}" 
+                height="100" width="100" 
+                alt="peace bird" 
+                class="animate-sway -scale-x-100 size-32" 
                 loading="eager"
             >
         </div>
@@ -160,7 +160,7 @@
                         <img
                             src="{{ asset('images/happy-cloud.png') }}"
                             alt="cute cloud"
-                            class="cloud-drift mx-auto size-32 mb-6"
+                            class="cloud-drift mx-auto mb-6"
                             loading="lazy"
                         >
                         <p class="text-2xl font-bold text-secondary mb-2">لا توجد منتجات هنا بعد</p>

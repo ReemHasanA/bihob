@@ -5,7 +5,7 @@
     <section class="m-md-5">
         <div class="flex flex-col md:flex-row justify-around p-5 gap-4 max-w-7xl mx-auto">
             <div class="mix-blend-multibly max-w-sm">
-                <img src="{{ asset('images/girl-with-hijab-and-her-flower-pot.png') }}" alt="{{ __('Hijabi cartoon girl with flower bot') }}">
+                <img src="{{ url('images/girl-with-hijab-and-her-flower-pot.png') }}" alt="{{ __('Hijabi cartoon girl with flower bot') }}">
             </div>
             
             <div class="max-w-md self-center my-6">

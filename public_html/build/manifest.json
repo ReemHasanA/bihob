@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CFSJY-ht.css",
+    "file": "assets/app-CkAbehoM.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -13,12 +13,12 @@
     "src": "resources/fonts/Amiri/Amiri-Regular.ttf"
   },
   "resources/js/app.js": {
-    "file": "assets/app-EtmsARUW.js",
+    "file": "assets/app-BeP5F0Vy.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-CFSJY-ht.css"
+      "assets/app-CkAbehoM.css"
     ],
     "assets": [
       "assets/Amiri-Regular-DYKNhp1L.ttf"

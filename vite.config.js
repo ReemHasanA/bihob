@@ -13,6 +13,9 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    build: {
+        outDir: './public_html/build/',
+    },
     server: {
         cors: true,
         watch: {

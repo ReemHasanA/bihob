@@ -36,36 +36,36 @@
         </div>
     </section>
 
-<section class="bg-secondary/10 py-20 px-6 text-center relative" x-data="revealOnView()">
-    <div class="max-w-4xl mx-auto flex justify-around items-start">
-        <div class="flex flex-col justify-center gap-12">
-            <!-- Cloud: gentle floating, like it's drifting -->
-            <img 
-                src="{{ asset('images/happy-cloud.png') }}" 
-                alt="cute cloud" 
-                class="my-6 cloud-animate"
-                :class="{ 'in-view': isInView }"
-                loading="lazy"
-            >
-            <!-- Winter girl: soft bounce, replaces the constant animate-bounce -->
-            <img 
-                src="{{ asset('images/winter-girl.png') }}" 
-                alt="love winter" 
-                class="winter-animate opacity-0"
-                :class="{ 'in-view': isInView }"
-                loading="lazy"
-            >
-        </div>
+    <section class="bg-secondary/10 py-20 px-6 text-center relative" x-data="revealOnView()">
+        <div class="max-w-4xl mx-auto flex justify-around items-start">
+            <div class="flex flex-col justify-center gap-12">
+                <!-- Cloud: gentle floating, like it's drifting -->
+                <img 
+                    src="{{ asset('images/happy-cloud.png') }}" 
+                    alt="cute cloud" 
+                    class="my-6 cloud-animate"
+                    :class="{ 'in-view': isInView }"
+                    loading="lazy"
+                >
+                <!-- Winter girl: soft bounce, replaces the constant animate-bounce -->
+                <img 
+                    src="{{ asset('images/winter-girl.png') }}" 
+                    alt="love winter" 
+                    class="winter-animate opacity-0"
+                    :class="{ 'in-view': isInView }"
+                    loading="lazy"
+                >
+            </div>
 
-        <div class="max-w-sm self-center animate-fade-in" :class="{ 'in-view': isInView }">
-            <h2 class="text-3xl">
-                لن تثنينا العواصف والأمطار
-                <br>
-                بل سنمطركم بالحب
-            </h2>
+            <div class="max-w-sm self-center animate-fade-in" :class="{ 'in-view': isInView }">
+                <h2 class="text-3xl">
+                    لن تثنينا العواصف والأمطار
+                    <br>
+                    بل سنمطركم بالحب
+                </h2>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section 
         class="py-20 px-6 text-center relative"
